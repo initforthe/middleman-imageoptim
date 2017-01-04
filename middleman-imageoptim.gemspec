@@ -16,10 +16,10 @@ Gem::Specification.new do |gem|
   gem.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   gem.require_paths = ['lib']
 
-  gem.add_dependency 'middleman-core', '~> 4.1.9'
-  gem.add_dependency 'middleman-cli', '~> 4.1.9'
-  gem.add_dependency 'image_optim', '~> 0.20.2'
-  gem.add_dependency 'image_optim_pack', '~> 0.2.1'
+  gem.add_dependency 'middleman-core', '>= 4.1.9'
+  gem.add_dependency 'middleman-cli', '>= 4.1.9'
+  gem.add_dependency 'image_optim', '>= 0.20.2'
+  gem.add_dependency 'image_optim_pack', '>= 0.2.1'
 
   gem.add_development_dependency 'appraisal'
   gem.add_development_dependency 'aruba'
